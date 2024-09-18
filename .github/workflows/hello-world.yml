@@ -1,20 +1,8 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Hello World
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-
-  jobs: hello-job
-
-  runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-  steps:
-
-    # Runs a single command using the runners shell
-  name: Echo text
-  run: 'echo "Hello, world!"'
+'on': push
+jobs:
+hello-job:
+runs-on: ubuntu-latest
+steps:
+  - name: Echo text
+    run: 'echo "Hello, world!"'
